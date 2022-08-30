@@ -1,0 +1,350 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+
+
+html{
+  background-color: #f9f9f8;
+}
+/* header */
+head{
+    border: solid 200px rgb(240, 237, 237);
+    padding: 0px;
+    margin: 20px auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5BC0BE;
+  text-align: left;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: small;
+  display: inline-block;
+  margin-right: auo;
+}
+
+li {
+  float: left;
+  padding: 2px;
+  list-style-position: 30px 30px 40px ,  top left;
+}
+.botonmenu{
+  display: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li a:hover:not(.active) {
+    background-color: #1a0a5e;
+    color: white;}
+
+    .contenedor1 {
+      display:flex;
+      height: 60px;
+      width: 600;
+      align-items:center
+    
+     }
+.contenedor1de1 {
+  width: 35%;
+  padding: 10px;
+ }
+.contenedor1de2{
+    padding: 10px 10px;
+  text-align: center;
+     }
+
+.imagenlogo{
+  height: 70px;
+  width: 350px;
+}
+
+
+.topright
+{    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+.picture-left{
+  text-decoration: none;
+}
+
+/* body */
+body{
+  padding: 2px;
+}
+h1{
+  font-family: 'Archivo Black', sans-serif;
+  color: #1a0a5e;
+}
+.columnadelmedio
+  {
+  background-image:url(https://saboryestilo.com.mx/maestros-de-la-parrilla/como-preparar-carne-para-hamburguesa/);
+  }
+.bienvenida{
+  text-align: center;
+  font-family: Light 300 Italic;
+}
+
+
+
+
+.Recomendados{
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.imagen :{
+  width: 50%;
+  height: 50px;
+  opacity: 0.3;
+  image-orientation:initial;
+  text-align: center;
+}
+hr{
+  height: 3px;
+  background-color: black;
+  width: 90%;
+}
+nav {
+  width: 100%;
+  height: 800px;
+  overflow-y: scroll none;
+   
+}
+h2{
+  color: #1a0a5e;
+}
+.picture {
+  background-color: white;
+  border: 4px solid #195799; 
+  padding: 20px;
+  font: 22px 'Archivo Black', sans-serif;
+  display: inline-block;
+  
+  
+}
+.picture img {
+  border: 1px solid #CCCCCC;
+  vertical-align:auto;
+  margin-bottom: 100px;
+  margin:10px auto;
+  
+ 	}
+
+/* footer */
+
+.footer{
+    display: grid;
+    position: fixed;
+    background:#5BC0BE;
+    width: 100%;
+    margin: 2px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    opacity: 100%;  
+    color: white;
+    grid-template-columns: 200px 400px;
+    grid-row: 5px;
+    justify-content: center;
+    
+  
+         }  
+.instagram{
+  border-radius: 25%;
+}
+.facebook{
+  border-radius: 25%;
+}
+.container1{
+  text-align: center;
+  padding: 10px 0;
+}
+.container2{
+  text-align: center;
+  padding: 10px 0;
+  font-size: small;
+  
+}
+@media only screen and (max-width: 600px) {
+  header {width: 100px;
+}
+
+
+.footer{
+   padding: 0px;
+   width: 480px
+}
+.container1{
+  font-size: 10px;
+  margin-left: 25%;
+  padding: 2px;
+  
+}
+.imagenlogo{
+  height: 50px;
+  width: 150px;
+}
+.columnadelmedio{
+  padding: 0%;
+}
+
+.container2{
+  font-size: 8px;
+  margin-right: auto;
+  contain: inherit;
+  margin-left: 5%;
+}
+.instagram{
+  border-radius: 15%;
+  
+}
+.facebook{
+  border-radius: 15%;
+
+}
+.contenedor1de2{
+  font-size: small;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #e5e5e5;
+  color: #1d1f20;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+  cursor: pointer;
+  display: block;
+  font: 2em/1 'Oswald', sans-serif;
+  padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+  background: #1d1f20;
+  border-radius: 0.05em;
+  height: 0.2em;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+#menu-icon {
+  display: inline-block;
+  margin: 0.4em 0;
+  max-width: 1em;
+  position: relative;
+}
+
+nav label #menu-icon {
+  float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+  content: '';
+  left: 0;
+  position: absolute;
+}
+
+#menu-icon:before {
+  top: -0.4em;
+}
+
+#menu-icon:after {
+  bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+  background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+nav input:checked ~ #overlay {
+  background: #e5e5e5;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* List */
+nav ul {
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+nav input:checked ~ ul {
+  margin: 1em;
+  max-height: inherit;
+  opacity: 1;
+}
+
+nav ul > li {
+  margin: 0.5em 0;
+}
+
+nav ul a {
+  color: #1d1f20!important;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+}
