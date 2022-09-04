@@ -6,14 +6,18 @@ html{
 }
 /* header */
 head{
-    border: solid 200px rgb(240, 237, 237);
+    border: solid 200px #f0eded;
     padding: 0px;
     margin: 20px auto;
-    padding: 0;
     width: 90%;
     max-width: 1000px;
     
 }
+header{
+  padding: 0px, 1px;
+ }
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -85,7 +89,11 @@ li a:hover:not(.active) {
 
 /* body */
 body{
-  padding: 2px;
+  padding: 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+ 
+  height: 1200px;
 }
 h1{
   font-family: 'Archivo Black', sans-serif;
@@ -102,11 +110,14 @@ h1{
 
 
 
-
 .Recomendados{
   font-family: 'Archivo Black', sans-serif;
 }
+.boxrecomendados{
+  height: 80px;
+  font-size: 40px;
 
+}
 .imagen :{
   width: 50%;
   height: 50px;
@@ -114,17 +125,17 @@ h1{
   image-orientation:initial;
   text-align: center;
 }
+.bk-colorgradient{
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%);
+color: white;
+}
 hr{
   height: 3px;
   background-color: black;
   width: 90%;
 }
-nav {
-  width: 100%;
-  height: 800px;
-  overflow-y: scroll none;
-   
-}
+
 h2{
   color: #1a0a5e;
 }
@@ -150,15 +161,15 @@ h2{
 .footer{
     display: grid;
     position: fixed;
-    background:#5BC0BE;
-    width: 100%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%); width: 100%;
     margin: 2px;
     bottom: 0;
     left: 0;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
     opacity: 100%;  
-    color: white;
+    color: rgb(5, 5, 92);
     grid-template-columns: 200px 400px;
     grid-row: 5px;
     justify-content: center;
@@ -167,9 +178,19 @@ h2{
          }  
 .instagram{
   border-radius: 25%;
+  transition:all 0.8s ease;
+}
+.instagram:hover{
+  transition:all 0.8s ease;
+  transform: scaleX(-1);
 }
 .facebook{
   border-radius: 25%;
+  transition:all 0.8s ease;
+}
+.facebook:hover{
+  transition:all 0.8s ease;
+  transform: scaleX(-1);
 }
 .container1{
   text-align: center;
@@ -181,170 +202,40 @@ h2{
   font-size: small;
   
 }
+
 @media only screen and (max-width: 600px) {
   header {width: 100px;
 }
 
 
-.footer{
-   padding: 0px;
-   width: 480px
+footer{
+  display: grid;
+  grid-template-columns: 20px 50px;
+  padding: 5px 300px;
 }
-.container1{
-  font-size: 10px;
-  margin-left: 25%;
-  padding: 2px;
-  
+
+.container01{
+  width: 10px;
+  height: 50px;
+ 
+}
+.container2{
+ width: 70px;
+ 
+}
+body{
+  height: 1600px;
+  width: 420px;
+}
+.boxrecomendados{
+  height: 80px;
+  font-size: large;
+  justify-content: center;
+
 }
 .imagenlogo{
-  height: 50px;
-  width: 150px;
+  width: 180px;
 }
-.columnadelmedio{
-  padding: 0%;
-}
-
-.container2{
-  font-size: 8px;
-  margin-right: auto;
-  contain: inherit;
-  margin-left: 5%;
-}
-.instagram{
-  border-radius: 15%;
-  
-}
-.facebook{
-  border-radius: 15%;
-
-}
-.contenedor1de2{
-  font-size: small;
-}
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background: #e5e5e5;
-  color: #1d1f20;
-  left: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
-
-/*** INPUT ***/
-nav input {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-/*** LABEL ***/
-nav label {
-  cursor: pointer;
-  display: block;
-  font: 2em/1 'Oswald', sans-serif;
-  padding: 0.5em;
-}
-
-/* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
-  background: #1d1f20;
-  border-radius: 0.05em;
-  height: 0.2em;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-
-#menu-icon {
-  display: inline-block;
-  margin: 0.4em 0;
-  max-width: 1em;
-  position: relative;
-}
-
-nav label #menu-icon {
-  float: right;
-}
-
-#menu-icon:before,
-#menu-icon:after {
-  content: '';
-  left: 0;
-  position: absolute;
-}
-
-#menu-icon:before {
-  top: -0.4em;
-}
-
-#menu-icon:after {
-  bottom: -0.4em;
-}
-
-/* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
-  background: transparent;
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:before {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:after {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-nav input:checked ~ #overlay {
-  background: #e5e5e5;
-  bottom: 0;
-  left: 0;
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  z-index: -1;
-}
-
-/* List */
-nav ul {
-  font-size: 1.5em;
-  list-style: none;
-  margin: 0;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
-}
-
-nav input:checked ~ ul {
-  margin: 1em;
-  max-height: inherit;
-  opacity: 1;
-}
-
-nav ul > li {
-  margin: 0.5em 0;
-}
-
-nav ul a {
-  color: #1d1f20!important;
-  text-decoration: none;
-}
-
-nav ul a:hover {
-  text-decoration: underline;
-}
-
+header{
+  width: 400px;
 }

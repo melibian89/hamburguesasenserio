@@ -4,18 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="">
   <link rel="stylesheet" href="stylecontactanos.css" type="text/css">
-  <ul>
-    <a class="flex" href="#"></a>
-    <li><a href="./InicioconCSS.html">Inicio</a> </li>
-    <li><a href="./Contactanos.html">Contactanos</a></li>
-    <li><a href="./ContactoUbicacion.html">Contacto / Ubicacion</a></li>
-    <li><a href="./Pedido Online.html">Pedido Online </a></li> 
-    <li><a href="./quienessomos.html">Quinenes somos</a></li>
-    <li><a href="./login.html">Login</a></li>
-</ul>
+  <link rel="stylesheet" href="https://fontawesome.com/icons/bars-sort?s=solid">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </head>
   <body>
-    <div id="Layer1" style="width:100%; height:600px; overflow: scroll-hiden;">
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-light bk-colorgradient">
+         <div class="container-fluid>
+          <div class="row"></div>
+                <div class="col-6">
+                  <a class="navbar-brand" href="#"></a>
+                  <img src="./c7779465e3f77c60e05cf53cb2cb9c71.png" class="imagenlogo" alt="">
+                </div>
+               <div class="col-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./InicioconCSS.html">Inicio</a>
+                        <a class="nav-link" href="./Contactanos.html">Contactanos</a>
+                        <a class="nav-link" href="./ContactoUbicacion.html">Contacto/Ubicacion</a>
+                        <a class="nav-link" href="./Pedido Online.html">Pedido online</a>
+                        <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+                        <a class="nav-link" href="./login.html">Login</a>
+                      </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+</header>
+<br>
+    <div class="containerprincipal"id="Layer1" >
     <form action="/signup" method="post">
         <h3>&#10070; Contactanos</h3>
         <p>
@@ -39,8 +62,9 @@
             <textarea name="message" id="" cols="30" rows="10"></textarea>
        </p>
             <p>
-          <button class="boton">Aceptar</button>
-          <button type="reset" class="boton">Reiniciar</button>
+          <button type="button" class="btn btn-primary">Aceptar</button>
+          <button type="reset" class="btn btn-info">Reiniciar</button>
+          
         </p>
 
       </form>
@@ -49,8 +73,8 @@
   <footer class="footer">
     <div class="container1">
     <p>Seguinos en las redes: 
-     <a  href="https://www.iNSTAGRAM.COM/"><img src="./instagra.jpg" alt="LogoINSTAGRAM" title="LogoINSTAGRAM" width="60" height="40" class="instagram" ></a>
-    <a href="https://www.facebook.COM/"><img src="./face.jpg" alt="LogoFACEBOOK" title="LogoFACEBOOK" width="60" height="40" class="facebook"> </a>
+     <a  href="https://www.iNSTAGRAM.COM/"><img src="./imagenes/instagra.jpg" alt="LogoINSTAGRAM" title="LogoINSTAGRAM" width="60" height="40" class="instagram" ></a>
+    <a href="https://www.facebook.COM/"><img src="./imagenes/face.jpg" alt="LogoFACEBOOK" title="LogoFACEBOOK" width="60" height="40" class="facebook"> </a>
     </p>
   </div>
   <div class="container2">

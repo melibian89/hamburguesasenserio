@@ -74,6 +74,13 @@ li a:hover:not(.active) {
 /* body */
 body{
     font-family: 'Archivo Black', sans-serif;
+    padding: 20px;
+    height: 700px;
+}
+.bk-colorgradient{
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%);
+color: white;
 }
 h2{
     color: #1a0a5e;
@@ -92,8 +99,8 @@ h2{
 .footer{
   display: grid;
   position: fixed;
-  background:#5BC0BE;
-  width: 100%;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%); width: 100%;
   margin: 2px;
   bottom: 0;
   left: 0;
@@ -109,9 +116,19 @@ h2{
        }  
 .instagram{
 border-radius: 25%;
+transition:all 0.8s ease;
+}
+.instagram:hover{
+transition:all 0.8s ease;
+transform: scaleX(-1);
 }
 .facebook{
 border-radius: 25%;
+transition:all 0.8s ease;
+}
+.facebook:hover{
+transition:all 0.8s ease;
+transform: scaleX(-1);
 }
 .container1{
 text-align: center;
@@ -122,4 +139,41 @@ text-align: center;
 padding: 10px 0;
 font-size: small;
 
+}
+
+@media only screen and (max-width: 600px) {
+  header {width: 100px;
+}
+
+
+footer{
+  display: grid;
+  grid-template-columns: 20px 50px;
+  padding: 5px 300px;
+}
+
+.container01{
+  width: 10px;
+  height: 50px;
+ 
+}
+.container2{
+ width: 70px;
+ 
+}
+body{
+  height: 1600px;
+  width: 420px;
+}
+.boxrecomendados{
+  height: 80px;
+  font-size: large;
+  justify-content: center;
+
+}
+.imagenlogo{
+  width: 180px;
+}
+header{
+  width: 400px;
 }

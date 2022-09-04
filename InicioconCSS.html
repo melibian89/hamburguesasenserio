@@ -7,64 +7,83 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fontawesome.com/icons/bars-sort?s=solid">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </head>
 
 <body >
+
+  <header>
+
+            <nav class="navbar navbar-expand-lg bg-light bk-colorgradient">
+               <div class="container-fluid">
+                <div class="row"></div>
+                      <div class="col-6">
+                        <a class="navbar-brand" href="#"></a>
+                        <img src="./c7779465e3f77c60e05cf53cb2cb9c71.png" class="imagenlogo img-fluid" alt="">
+                      </div>
+                     <div class="col-6 ">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon position-absolute top-0 end-0 "></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                              <a class="nav-link active" aria-current="page" href="./InicioconCSS.html">Inicio</a>
+                              <a class="nav-link" href="./Contactanos.html">Contactanos</a>
+                              <a class="nav-link" href="./ContactoUbicacion.html">Contacto/Ubicacion</a>
+                              <a class="nav-link" href="./Pedido Online.html">Pedido online</a>
+                              <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+                              <a class="nav-link" href="./login.html">Login</a>
+                            </div>
+                    </div>
+                </div>
+              </div>
+            </nav>
+</header>
     <nav>
-      <header>
-               <dir class="contenedor1">
-        <dir class="contenedor1de1">
-          <img src="./c7779465e3f77c60e05cf53cb2cb9c71.png" class="imagenlogo" alt="">
-        </dir>
-        <div class="contenedor1de2">
-          <div class="botonmenu">
-          <input id="responsive-menu" type="checkbox">
-          <i class="fa-solidfa-bars-sort"></i>
-          <label for="responsive-menu">Menu <span id="menu-icon"></span></label>
-          <div id="overlay"></div>
-        </div>
-      <ul>
-        <a class="listadodeinicio" href="#"></a>
-        <li><a href="./InicioconCSS.html" class="Inicio">Inicio</a> </li>
-        <li><a href="./Contactanos.html" class="contactanos">Contactanos</a></li>
-        <li><a href="./ContactoUbicacion.html" class="contacto">Contacto / Ubicacion</a></li>
-        <li><a href="./Pedido Online.html" class="pedidoonline">Pedido Online </a></li> 
-        <li><a href="./quienessomos.html" class="quienessomos" >Quinenes somos</a></li>
-        <li><a href="./login.html" class="login">Login</a></li>
-    </ul>
-       </div>
-      </dir></header>
-      <dir> <h1 class="bienvenida">Bienvenidos tenemos las mejores hamburguesas</h1></dir>
+          <dir> <h1 class="bienvenida">Bienvenidos tenemos las mejores hamburguesas</h1></dir>
       <div class="columnadelmedio">
         <div class="primeraparte">
                   
            <center>
-              <img class="imagen" src="comiendo hamburguesa.jpg" alt="" idth="400" height="300">
+              <img class="imagen" src="./imagenes/comiendo hamburguesa.jpg" alt="" idth="400" height="300">
             </div>
            <div>
         </center>
-        <hr width=50%  align="center" color="#1a0a5e">
-        <center > <h2 class="Recomendados">Los recomendados del dia &#10050;</h2></center>
-      
-      <center> 
-        
-              <div class="picture left" style="width:220px;">
-                <a  href="Pedido Online.html"><img cass="hamburguesa1" src="hambur1.jpg" alt=""idth="250" height="150" style="position: ;center">  Hambuguesa con queso
-               </div></a>
-
-               <div class="picture left" style="width:220px"> 
-                <a  href="Pedido Online.html"><img class="hamburguesa2" src="hambur2.jpg" alt=""idth="230" height="150" style="position: ;center"> Hamburguesa completa
-              </div></a>
+        <br>
+        <center>
+          <div class="shadow p-3 mb-5 bg-body rounded boxrecomendados"> Los recomendados del dia &#10050;</div>
       </center>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <img src="./imagenes/hambur1.jpg" class="card-img-top" alt=""idth="450" height="300">  
+                            <div class="card-body">
+                              <h5 class="card-title">Hamburguesa con queso</h5>
+                              <p class="card-text"></p>
+                              <a href="./Pedido Online.html" class="btn btn-primary">Pedir</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <img src="./imagenes/hambur2.jpg" class="card-img-top" alt=""idth="450" height="300">  
+                            <div class="card-body">
+                              <h5 class="card-title">Hamburguesa completa</h5>
+                              <p class="card-text"></p>
+                              <a href="./Pedido Online.html" class="btn btn-primary">Pedir</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
    
   </nav>
   </body>
   <footer class="footer">
     <div class="container1">
     <p>Seguinos en las redes: 
-     <a  href="https://www.iNSTAGRAM.COM/"><img src="./instagra.jpg" alt="LogoINSTAGRAM" title="LogoINSTAGRAM" width="60" height="40" class="instagram" ></a>
-    <a href="https://www.facebook.COM/"><img src="./face.jpg" alt="LogoFACEBOOK" title="LogoFACEBOOK" width="60" height="40" class="facebook"> </a>
+     <a  href="https://www.iNSTAGRAM.COM/"><img src="./imagenes/instagra.jpg" alt="LogoINSTAGRAM" title="LogoINSTAGRAM" width="60" height="40" class="instagram" ></a>
+    <a href="https://www.facebook.COM/"><img src="./imagenes/face.jpg" alt="LogoFACEBOOK" title="LogoFACEBOOK" width="60" height="40" class="facebook"> </a>
     </p>
   </div>
   <div class="container2">
