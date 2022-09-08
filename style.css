@@ -6,7 +6,7 @@ html{
 }
 /* header */
 head{
-    border: solid 200px #f0eded;
+    border: solid 300px #f0eded;
     padding: 0px;
     margin: 20px auto;
     width: 90%;
@@ -55,13 +55,13 @@ li a:hover:not(.active) {
     background-color: #1a0a5e;
     color: white;}
 
-    .contenedor1 {
-      display:flex;
-      height: 60px;
-      width: 600;
-      align-items:center
-    
-     }
+  .contenedor1 {
+        display:flex;
+        height: 50px;
+        width: 500;
+        align-items:center
+             
+       }
 .contenedor1de1 {
   width: 35%;
   padding: 10px;
@@ -92,8 +92,7 @@ body{
   padding: 20px;
   overflow-y: scroll;
   scroll-behavior: smooth;
- 
-  height: 1200px;
+  height: 1400px;
 }
 h1{
   font-family: 'Archivo Black', sans-serif;
@@ -106,6 +105,7 @@ h1{
 .bienvenida{
   text-align: center;
   font-family: Light 300 Italic;
+  text-shadow: 1px 1px 2px rgb(58, 17, 192), 0 0 5px rgb(3, 3, 152);
 }
 
 
@@ -116,6 +116,8 @@ h1{
 .boxrecomendados{
   height: 80px;
   font-size: 40px;
+  
+
 
 }
 .imagen :{
@@ -135,6 +137,10 @@ hr{
   background-color: black;
   width: 90%;
 }
+h2{
+  color: #240d89;
+  text-transform: uppercase;
+  text-decoration: underline;}
 
 h2{
   color: #1a0a5e;
@@ -155,57 +161,125 @@ h2{
   margin:10px auto;
   
  	}
+ /*inicio*/
+.comiendohamburguesa{
+  border-radius: 8px;
+  padding: 3px;
+  width: 500px;
+}
+.hamburguesaconqueso{
+  padding: 3px;
+  width: 500px;
+}
+
+.cuadrado{
+  background-color: red;
+  position: relative;
+  animation-duration: 4s;
+  animation-name: colorescuadrado;
+  padding: 3px;
+  width: 600px;
+  
+}
+@keyframes   colorescuadrado {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}}
+
+
+/*contactoubicacion*/
+.imagenmapa{
+  padding: 10px;
+  width: 900px;
+  
+}
+/*pedido online*/
+  .comentariosdelpedido{
+    color: #240d89;
+}
+.boton{
+  border-style:double;
+  background-color:#5BC0BE;
+}
+.titulohambuerguesas{
+  color: #1a0a5e;
+      }
+
+/*quienessomos*/
+.texto{
+  text-align:center;
+  margin: auto;
+  color: black;
+  opacity: 0px;
+  text-shadow: #1a0a5e;
+  }
+.imagenfondo{
+  opacity:50%;
+  size: 100%;
+  background-size: contain;
+}
+.cajacontenedora{
+  display: flex;
+  flex-direction:row wrap;
+
+}
 
 /* footer */
 
 .footer{
-    display: grid;
-    position: fixed;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%); width: 100%;
-    margin: 2px;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    opacity: 100%;  
-    color: rgb(5, 5, 92);
-    grid-template-columns: 200px 400px;
-    grid-row: 5px;
-    justify-content: center;
-    
+  display: grid;
+  position: fixed;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%); width: 100%;
+  margin: 2px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  opacity: 100%;  
+  color: rgb(5, 5, 92);
+  grid-template-columns: 200px 400px;
+  grid-row: 5px;
+  justify-content: center;
   
-         }  
+
+       }  
 .instagram{
-  border-radius: 25%;
-  transition:all 0.8s ease;
+border-radius: 25%;
+transition:all 0.8s ease;
 }
 .instagram:hover{
-  transition:all 0.8s ease;
-  transform: scaleX(-1);
+transition:all 0.8s ease;
+transform: scaleX(-1);
 }
 .facebook{
-  border-radius: 25%;
-  transition:all 0.8s ease;
+border-radius: 25%;
+transition:all 0.8s ease;
 }
 .facebook:hover{
-  transition:all 0.8s ease;
-  transform: scaleX(-1);
+transition:all 0.8s ease;
+transform: scaleX(-1);
 }
 .container1{
-  text-align: center;
-  padding: 10px 0;
+text-align: center;
+padding: 10px 0;
 }
 .container2{
-  text-align: center;
-  padding: 10px 0;
-  font-size: small;
-  
+text-align: center;
+padding: 10px 0;
+font-size: small;
+
+}
+
+  @media screen and (max-width: 1002px) {
+    body {
+      background-color: rgb(85, 195, 212);
+      color: white;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  header {width: 100px;
-}
 
 
 footer{
@@ -224,8 +298,8 @@ footer{
  
 }
 body{
-  height: 1600px;
-  width: 420px;
+  height: 1500px;
+  width: 400px;
 }
 .boxrecomendados{
   height: 80px;
@@ -237,5 +311,19 @@ body{
   width: 180px;
 }
 header{
-  width: 400px;
+  width: 360px;
+}
+.cajatexto{
+  background-color: #f9f9f8;
+}
+
+.hamburguesaconqueso {
+  padding: 3px;
+  width: 80px;
+}
+.cuadradodehamburguesa{
+  height: 350px;
+  width: 350px;
+}
+
 }
