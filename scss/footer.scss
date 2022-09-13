@@ -1,0 +1,43 @@
+ /* footer */
+  
+ .footer{
+    display: grid;
+    position: fixed;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%); width: 100%;
+    margin: 2px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    opacity: 100%;  
+    color: rgb(5, 5, 92);
+    grid-template-columns: 200px 400px;
+    grid-row: 5px;
+    justify-content: center;
+      
+.instagram{
+  border-radius: 25%;
+  transition:all 0.8s ease;
+   &hover{
+  transition:all 0.8s ease;
+  transform: scaleX(-1);
+  }}
+  
+.facebook{
+  border-radius: 25%;
+  transition:all 0.8s ease;
+    &hover{
+  transition:all 0.8s ease;
+  transform: scaleX(-1);
+  }}
+.container1{
+  text-align: center;
+  padding: 10px 0;
+  }
+.container2{
+  text-align: center;
+  padding: 10px 0;
+  font-size: small;
+  }
+}

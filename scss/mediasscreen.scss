@@ -1,0 +1,54 @@
+  
+ 
+@media screen and (max-width: 1002px) {
+    body {
+      background-color: rgb(85, 195, 212);
+      color: white;
+    } }
+
+@media only screen and (max-width: 600px) {
+ 
+footer{
+  display: grid;
+  grid-template-columns: 20px 50px;
+  padding: 5px 300px;
+}
+
+.container01{
+  width: 10px;
+  height: 50px;
+}
+.container2{
+ width: 70px;
+ 
+}
+body{
+  height: 1500px;
+  width: 400px;
+
+.boxrecomendados{
+  height: 80px;
+  font-size: large;
+  justify-content: center;
+
+}
+.imagenlogo{
+  width: 180px;
+}
+
+.cajatexto{
+  background-color: #f9f9f8;
+}
+
+.hamburguesaconqueso {
+  padding: 3px;
+  width: 80px;
+}
+.cuadradodehamburguesa{
+  height: 350px;
+  width: 350px;
+}}
+
+header{
+  width: 360px;}
+}  

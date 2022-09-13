@@ -1,0 +1,147 @@
+/* import */
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import './footer.scss';
+@import './header.scss';
+@import './mediasscreen.scss';
+@import './_colors.scss';
+
+
+/* SCSS */
+head{
+    border: solid 300px #f0eded;
+    padding: 0px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    }
+
+
+body{
+    padding: 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 1400px;}
+
+  /* CONTENIDO INICIO*/
+
+  
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    color: #1a0a5e;
+  }
+.columnadelmedio
+    {
+    background-image:url(https://saboryestilo.com.mx/maestros-de-la-parrilla/como-preparar-carne-para-hamburguesa/);
+    }
+.bienvenida{
+    text-align: center;
+    font-family: Light 300 Italic;
+    text-shadow: $color-sombra;
+  }
+  .Recomendados{
+    font-family: 'Archivo Black', sans-serif;
+  }
+.boxrecomendados{
+    height: 80px;
+    font-size: 40px;} 
+
+.imagen {
+    width: 50%;
+    height: 50px;
+    opacity: 0.3;
+    image-orientation:initial;
+    text-align: center;
+  }
+  .bk-colorgradient{
+    background: $secondary-color;
+    background: $principal-color;
+    color: white;
+  }
+  hr{
+    height: 3px;
+    background-color: black;
+    width: 90%;
+  }
+  h2{
+    color: #240d89;
+    text-transform: uppercase;
+    text-decoration: underline;}
+
+    .picture {
+    background-color: white;
+    border: 4px solid #195799; 
+    padding: 20px;
+    font: 22px 'Archivo Black', sans-serif;
+    display: inline-block;
+    
+    img {
+    border: 1px solid #CCCCCC;
+    vertical-align:auto;
+    margin-bottom: 100px;
+    margin:10px auto;
+        }
+    }
+
+ /*inicio*/
+ .comiendohamburguesa{
+    border-radius: 8px;
+    padding: 3px;
+    width: 500px;
+  }
+  .hamburguesaconqueso{
+    padding: 3px;
+    width: 500px;
+  }
+  
+  .cuadrado{
+    background-color: red;
+    position: relative;
+    animation-duration: 4s;
+    animation-name: colorescuadrado;
+    padding: 3px;
+    width: 600px;
+   
+  @keyframes   colorescuadrado {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}}
+  }
+
+  /*contactoubicacion*/
+.imagenmapa{
+    padding: 10px;
+    width: 900px;
+    
+  }
+  /*pedido online*/
+.comentariosdelpedido{
+      color: #240d89;
+  }
+.boton{
+    border-style:double;
+    background-color:#5BC0BE;
+  }
+  .titulohambuerguesas{
+    color: #1a0a5e;
+        }
+  
+  /*quienessomos*/
+.texto{
+    text-align:center;
+    margin: auto;
+    color: black;
+    opacity: 0px;
+    text-shadow: #1a0a5e;
+    }
+.imagenfondo{
+    opacity:50%;
+    size: 100%;
+    background-size: contain;
+  }
+.cajacontenedora{
+    display: flex;
+    flex-direction:row wrap;
+  
+  }
+

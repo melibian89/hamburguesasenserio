@@ -1,0 +1,263 @@
+/* import */
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+/* footer */
+.footer {
+  display: grid;
+  position: fixed;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fff4f6 100%);
+  width: 100%;
+  margin: 2px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  opacity: 100%;
+  color: #05055c;
+  grid-template-columns: 200px 400px;
+  grid-row: 5px;
+  justify-content: center; }
+  .footer .instagram {
+    border-radius: 25%;
+    transition: all 0.8s ease; }
+    .footer .instagramhover {
+      transition: all 0.8s ease;
+      transform: scaleX(-1); }
+  .footer .facebook {
+    border-radius: 25%;
+    transition: all 0.8s ease; }
+    .footer .facebookhover {
+      transition: all 0.8s ease;
+      transform: scaleX(-1); }
+  .footer .container1 {
+    text-align: center;
+    padding: 10px 0; }
+  .footer .container2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: small; }
+
+/* header */
+header {
+  padding: 0px, 1px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5BC0BE;
+  text-align: left;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: small;
+  display: inline-block; }
+
+li {
+  float: left;
+  padding: 2px;
+  list-style-position: 30px 30px 40px ,  top left; }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+    li ahover:not(.active) {
+      background-color: #111; }
+    li ahover:not(.active) {
+      background-color: #1a0a5e;
+      color: white; }
+
+.botonmenu {
+  display: none; }
+
+.contenedor1 {
+  display: flex;
+  height: 50px;
+  width: 500;
+  align-items: center; }
+
+.contenedor1de1 {
+  width: 35%;
+  padding: 10px; }
+
+.contenedor1de2 {
+  padding: 10px 10px;
+  text-align: center; }
+
+.imagenlogo {
+  height: 70px;
+  width: 350px; }
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px; }
+
+.picture-left {
+  text-decoration: none; }
+
+@media screen and (max-width: 1002px) {
+  body {
+    background-color: #55c3d4;
+    color: white; } }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20px 50px;
+    padding: 5px 300px; }
+  .container01 {
+    width: 10px;
+    height: 50px; }
+  .container2 {
+    width: 70px; }
+  body {
+    height: 1500px;
+    width: 400px; }
+    body .boxrecomendados {
+      height: 80px;
+      font-size: large;
+      justify-content: center; }
+    body .imagenlogo {
+      width: 180px; }
+    body .cajatexto {
+      background-color: #f9f9f8; }
+    body .hamburguesaconqueso {
+      padding: 3px;
+      width: 80px; }
+    body .cuadradodehamburguesa {
+      height: 350px;
+      width: 350px; }
+  header {
+    width: 360px; } }
+
+/* SCSS */
+head {
+  border: solid 300px #f0eded;
+  padding: 0px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px; }
+
+body {
+  padding: 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 1400px; }
+
+/* CONTENIDO INICIO*/
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  color: #1a0a5e; }
+
+.columnadelmedio {
+  background-image: url(https://saboryestilo.com.mx/maestros-de-la-parrilla/como-preparar-carne-para-hamburguesa/); }
+
+.bienvenida {
+  text-align: center;
+  font-family: Light 300 Italic;
+  text-shadow: 1px 1px 2px #3a11c0, 0 0 5px #030398; }
+
+.Recomendados {
+  font-family: 'Archivo Black', sans-serif; }
+
+.boxrecomendados {
+  height: 80px;
+  font-size: 40px; }
+
+.imagen {
+  width: 50%;
+  height: 50px;
+  opacity: 0.3;
+  image-orientation: initial;
+  text-align: center; }
+
+.bk-colorgradient {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fff4f6 100%);
+  color: white; }
+
+hr {
+  height: 3px;
+  background-color: black;
+  width: 90%; }
+
+h2 {
+  color: #240d89;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+.picture {
+  background-color: white;
+  border: 4px solid #195799;
+  padding: 20px;
+  font: 22px 'Archivo Black', sans-serif;
+  display: inline-block; }
+  .picture img {
+    border: 1px solid #CCCCCC;
+    vertical-align: auto;
+    margin-bottom: 100px;
+    margin: 10px auto; }
+
+/*inicio*/
+.comiendohamburguesa {
+  border-radius: 8px;
+  padding: 3px;
+  width: 500px; }
+
+.hamburguesaconqueso {
+  padding: 3px;
+  width: 500px; }
+
+.cuadrado {
+  background-color: red;
+  position: relative;
+  animation-duration: 4s;
+  animation-name: colorescuadrado;
+  padding: 3px;
+  width: 600px; }
+
+@keyframes colorescuadrado {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: yellow; }
+  50% {
+    background-color: blue; }
+  100% {
+    background-color: green; } }
+
+/*contactoubicacion*/
+.imagenmapa {
+  padding: 10px;
+  width: 900px; }
+
+/*pedido online*/
+.comentariosdelpedido {
+  color: #240d89; }
+
+.boton {
+  border-style: double;
+  background-color: #5BC0BE; }
+
+.titulohambuerguesas {
+  color: #1a0a5e; }
+
+/*quienessomos*/
+.texto {
+  text-align: center;
+  margin: auto;
+  color: black;
+  opacity: 0px;
+  text-shadow: #1a0a5e; }
+
+.imagenfondo {
+  opacity: 50%;
+  size: 100%;
+  background-size: contain; }
+
+.cajacontenedora {
+  display: flex;
+  flex-direction: row wrap; }
