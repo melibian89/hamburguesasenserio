@@ -1,4 +1,6 @@
 
-$principal-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,244,246,1) 100%);
-$secondary-color:rgb(63,94,251);
-$color-sombra: 1px 1px 2px rgb(58, 17, 192), 0 0 5px rgb(3, 3, 152);
+
+$primarycolor:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(239,177,69,1) 30%, rgba(239,177,69,1) 73%, rgba(0,0,2,1) 100%,);
+$secondarycolor:rgb(63,94,251);
+$colorsombra: 1px 1px 2px black, 0 0 5px rgba(239,177,69,1);
+

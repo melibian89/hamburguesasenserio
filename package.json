@@ -1,7 +1,6 @@
 {
   "name": "hamburguesasenserio-melina-aguirre",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -241,7 +240,6 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css \"",
     "build-css": "node-sass --include-path scss scss/app.scss css/main.css"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/melibian89/hamburguesasenserio.git"
@@ -251,5 +249,6 @@
   "bugs": {
     "url": "https://github.com/melibian89/hamburguesasenserio/issues"
   },
-  "homepage": "https://github.com/melibian89/hamburguesasenserio#readme"
+  "homepage": "https://github.com/melibian89/hamburguesasenserio#readme",
+  "description": ""
 }

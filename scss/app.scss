@@ -13,21 +13,24 @@ head{
     margin: 20px auto;
     width: 90%;
     max-width: 1000px;
+    color: white;
     }
 
 
 body{
-    padding: 20px;
+    padding: 40px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 1400px;}
+    height: 1390px;
+    background-image: url(../imagenes/fondo-naranja-abstracto_1378-146.jpg);
+    }
 
   /* CONTENIDO INICIO*/
-
+  
   
 h1{
     font-family: 'Archivo Black', sans-serif;
-    color: #1a0a5e;
+    color:black;
   }
 .columnadelmedio
     {
@@ -36,14 +39,20 @@ h1{
 .bienvenida{
     text-align: center;
     font-family: Light 300 Italic;
-    text-shadow: $color-sombra;
+    text-shadow: $colorsombra;
+    color: black;
   }
   .Recomendados{
     font-family: 'Archivo Black', sans-serif;
   }
+.boxhamburguer{
+    margin: 50px 10px;
+
+}
 .boxrecomendados{
     height: 80px;
-    font-size: 40px;} 
+    font-size: 40px;
+    background-image: url(../imagenes/fondo-naranja-abstracto_1378-146.jpg)} 
 
 .imagen {
     width: 50%;
@@ -53,9 +62,8 @@ h1{
     text-align: center;
   }
   .bk-colorgradient{
-    background: $secondary-color;
-    background: $principal-color;
-    color: white;
+     background:$primarycolor;
+     color: $primarycolor;
   }
   hr{
     height: 3px;
@@ -63,13 +71,13 @@ h1{
     width: 90%;
   }
   h2{
-    color: #240d89;
+    color: black;
     text-transform: uppercase;
     text-decoration: underline;}
 
     .picture {
     background-color: white;
-    border: 4px solid #195799; 
+    border: 4px solid black; 
     padding: 20px;
     font: 22px 'Archivo Black', sans-serif;
     display: inline-block;
@@ -82,30 +90,41 @@ h1{
         }
     }
 
+
  /*inicio*/
+
+.cuadradocentral{
+  position:absolute;
+  padding-left: 100px;
+}
  .comiendohamburguesa{
     border-radius: 8px;
     padding: 3px;
-    width: 500px;
-  }
+    width: 450px;
+    opacity: 1;
+    background-color:rgba(239,177,69,1) 
+      }
   .hamburguesaconqueso{
-    padding: 3px;
-    width: 500px;
+    padding: 2px;
+    width: 15px;
+    background-color:rgba(239,177,69,1) 
   }
   
   .cuadrado{
-    background-color: red;
-    position: relative;
+    position:relative;
     animation-duration: 4s;
     animation-name: colorescuadrado;
-    padding: 3px;
-    width: 600px;
+    margin: 20 0;
+    padding: 8px;
+    width: 390px;
+    background-color:rgba(239,177,69,1) ;
    
   @keyframes   colorescuadrado {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}}
+    0%   {background-color: black;}
+    25%  {background-color: rgba(239,177,69,1);}
+    50%  {background-color: black;}
+    100% {background-color: rgba(239,177,69,1);}
+  }
   }
 
   /*contactoubicacion*/
@@ -116,14 +135,14 @@ h1{
   }
   /*pedido online*/
 .comentariosdelpedido{
-      color: #240d89;
+      color: black;
   }
 .boton{
     border-style:double;
-    background-color:#5BC0BE;
+    background-color:black;
   }
   .titulohambuerguesas{
-    color: #1a0a5e;
+    color: black;
         }
   
   /*quienessomos*/
@@ -132,7 +151,7 @@ h1{
     margin: auto;
     color: black;
     opacity: 0px;
-    text-shadow: #1a0a5e;
+    text-shadow: white;
     }
 .imagenfondo{
     opacity:50%;
@@ -144,4 +163,5 @@ h1{
     flex-direction:row wrap;
   
   }
+
 

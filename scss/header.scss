@@ -1,16 +1,21 @@
+@import './_colors.scss';
+
 /* header */
-header{
-    padding: 0px, 1px;}
+
+  header{
+    padding: 0px, 1px;
+    }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5BC0BE;
+    background-color: black;
     text-align: left;
     font-family: 'Archivo Black', sans-serif;
     font-size: small;
     display: inline-block;
+    color: white;
   
   }
   li {
@@ -25,13 +30,14 @@ header{
       padding: 14px 16px;
       text-decoration: none;
   
-      &hover:not(.active) {
+      &:hover:not(.active) {
       background-color: #111;}
    
-      &hover:not(.active) {
-        background-color: #1a0a5e;
+      &:hover:not(.active) {
+        background-color:#111;
         color: white;}
       }
+ 
   }
   .botonmenu{
           display: none;
@@ -54,7 +60,7 @@ header{
   
   .imagenlogo{
     height: 70px;
-    width: 350px;
+    width: 450px;
   }
   
   
